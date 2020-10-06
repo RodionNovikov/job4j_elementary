@@ -2,12 +2,10 @@ package ru.job4j.converter;
 
 public class Converter {
     public static int rubleToDollar(int value) {
-        int r = value / 60;
         return value / 60;
     }
 
     public static int rubleToEuro(int value) {
-        int r = value / 70;
         return value / 70;
     }
 
