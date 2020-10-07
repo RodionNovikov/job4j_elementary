@@ -8,11 +8,11 @@ import static org.junit.Assert.*;
 public class PointTest {
 
     @Test
-    public void when54to108thenDistance3() {
+    public void when54to109thenDistance3() {
         int x1 = 5;
         int y1 = 4;
         int x2 = 10;
-        int y2 = 8;
+        int y2 = 9;
         int expected = 3;
         double out = Point.distance(x1, y1, x2, y2);
         Assert.assertEquals(expected, out, 0.01);
