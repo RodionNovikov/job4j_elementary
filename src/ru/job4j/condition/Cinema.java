@@ -14,6 +14,7 @@ public class Cinema {
 
     public static void main(String[] args) {
             access(15);
+            access(21);
 
     }
 }
