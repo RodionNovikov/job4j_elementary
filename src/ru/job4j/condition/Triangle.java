@@ -6,7 +6,7 @@ public class Triangle {
     }
 
     public static void main(String[] args) {
-       boolean result = Triangle.exist(2, 2, 6);
+       boolean result = Triangle.exist(3, 2, 6);
        System.out.println(result);
     }
 }

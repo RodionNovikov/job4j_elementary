@@ -9,7 +9,7 @@ public class TriangleTest {
 
     @Test
     public void whenExist() {
-        boolean result = Triangle.exist(8, 8, 15);
+        boolean result = Triangle.exist(7, 7, 15);
         assertThat(result, is(true));
     }
 
