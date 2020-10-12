@@ -8,13 +8,13 @@ public class MaxTest {
 
     @Test
     public void thenMaxFirtsToSecond() {
-        int result = Max.max(17, 9);
+        int result = Max.max(17, 6);
         assertThat(result, is(17));
     }
 
     @Test
     public void thenFirstToMaxSecond() {
-        int result = Max.max(17, 23);
+        int result = Max.max(8, 23);
         assertThat(result, is(23));
     }
 
