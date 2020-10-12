@@ -2,17 +2,20 @@ package ru.job4j.condition;
 
 public class DammyBot {
 
-    public static void bot(String question) {
-        if (question.equals("Hi bot")) {
-            System.out.println("Hi smart ass");
-        } else if (question.equals("bye")) {
-            System.out.println("see you later");
-        } else  {
-            System.out.println("i do not know answer!");
+    public static String answer(String question) {
+        String rsl = "Это ставит меня в тупик. Задайте другой вопрос.";
+            if ("Привет, Бот.".equals(question)) {
+                rsl =  "Привет, умник.";
+            } else if ("Пока.".equals(question)) {
+                rsl = "До скорой встречи.";
+            }
+            return rsl;
+        }
+
+        public static void main(String[] args) {
+            String rsl = DammyBot.answer("Привет, Бот");
+            System.out.println(rsl);
+            rsl = DammyBot.answer("Пока.");
+            System.out.println(rsl);
         }
     }
-
-    public static void main(String[] args) {
-    DammyBot.bot("Сколько тебе лет?");
-    }
-}
