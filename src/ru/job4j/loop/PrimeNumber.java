@@ -7,8 +7,6 @@ public class PrimeNumber {
         for (int index = 1; index <= finish; index++) {
             if (CheckPrimeNumber.check(index)) {
                 count += 1;
-            } else {
-                count += 0;
             }
         }
         return count;
