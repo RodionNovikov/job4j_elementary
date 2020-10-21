@@ -25,11 +25,11 @@ public class FindLoopTest {
     }
 
     @Test
-    public void whenArrayHas8Then1() {
+    public void whenArrayHas8ThenMinus1() {
         int input[] = {1, 0, 4, 2, 3, 5, 16, 19};
         int value = 8;
         int result = FindLoop.indexOf(input, value);
-        int expect = 1;
+        int expect = -1;
         assertThat(result, is(expect));
     }
 }
