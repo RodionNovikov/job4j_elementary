@@ -6,6 +6,7 @@ public class SwitchArray {
         int temp = array[source];
         array[source] = dest + 1;
         array[dest] = temp;
+
         return array;
     }
 
