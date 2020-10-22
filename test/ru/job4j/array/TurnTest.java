@@ -15,6 +15,7 @@ public class TurnTest {
         assertThat(result, is(expect));
     }
 
+
     @Test
     public void whenTurnArrayWithOddAmountOfElementsThenTurnedArray() {
         Turn turner = new Turn();
