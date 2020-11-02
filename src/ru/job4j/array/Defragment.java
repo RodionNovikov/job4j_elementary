@@ -6,14 +6,16 @@ public class Defragment {
             if (array[index] == null) {
                 int point = index;
                 for (int i = point + 1; i < array.length; i++) {
-                    array[i - 1] = array[i];
+                    if (array[i] != null) {
+                        array[point] = array[i];
+                        array[i] = null;
+                        break;
                     }
-                array[array.length - 1] = null;
-
                 }
                 System.out.print(array[index] + " ");
             }
-            return array;
+        }
+        return  array;
         }
 
         public static void main(String[] args) {
