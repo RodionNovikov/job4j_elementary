@@ -11,8 +11,8 @@ public class Machine {
         for (int index = 0; index < coins.length; index++) {
             while (chenge - coins[index] >= 0) {
                 rsl[size] = coins[index];
-            chenge -= coins[index];
-            size = index + 1;
+                chenge -= coins[index];
+                size = index + 1;
             }
         }
         return Arrays.copyOf(rsl, size);
