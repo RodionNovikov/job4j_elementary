@@ -10,7 +10,7 @@ public class Machine {
         int chenge = money - price;
         for (int index = 0; index < coins.length; index++) {
             while (chenge - coins[index] >= 0) {
-                rsl[size] += coins[index];
+                rsl[size] = coins[index];
             chenge -= coins[index];
             size = index + 1;
             }
