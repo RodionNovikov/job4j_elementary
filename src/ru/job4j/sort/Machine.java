@@ -12,7 +12,7 @@ public class Machine {
             while (chenge - coins[index] >= 0) {
                 rsl[size] = coins[index];
                 chenge -= coins[index];
-                size = index + 1;
+                size++;
             }
         }
         return Arrays.copyOf(rsl, size);
