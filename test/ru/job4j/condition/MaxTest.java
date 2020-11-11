@@ -1,27 +1,25 @@
 package ru.job4j.condition;
 
+import org.junit.Assert;
 import org.junit.Test;
-import static org.hamcrest.core.Is.is;
+import static org.hamcrest.Matchers.closeTo;
+import static org.junit.Assert.assertThat;
 import static org.junit.Assert.*;
 
 public class MaxTest {
 
     @Test
-    public void thenMaxFirtsToSecond() {
-        int result = Max.max(17, 6);
-        assertThat(result, is(17));
+    public void getMaxOftwo() {
+      assertThat(second, Max.max(1, 7));
     }
 
     @Test
-    public void thenFirstToMaxSecond() {
-        int result = Max.max(8, 23);
-        assertThat(result, is(23));
+    public void getMaxOfthree() {
+        assertThat(first, Max.max(12, 5, 3));
     }
 
     @Test
-    public void thenFirstEquSecond() {
-        int result = Max.max(28, 28);
-        assertThat(result, is(28));
-
+    public void getMaxOfFour() {
+        assertTrue(fourth, Max.max(8, 5, 6, 9));
     }
 }
