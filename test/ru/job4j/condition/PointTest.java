@@ -4,39 +4,22 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
+import static org.hamcrest.core.Is.is;
 
 public class PointTest {
 
     @Test
-    public void when54to109thenDistance3() {
-        int x1 = 5;
-        int y1 = 4;
-        int x2 = 10;
-        int y2 = 9;
-        int expected = 3;
-        double out = Point.distance(x1, y1, x2, y2);
-        Assert.assertEquals(expected, out, 0.01);
-    }
+    public static void main(String[] args) {
+       Point a = new Point(0, 0);
+       Point b = new Point(0, 2);
+       double dist = a.distance(b);
+       System.out.println(dist);
+       Point x = new Point(10, 12, 13);
+       Point y = new Point(11, 14, 8);
+       Point z = new Point(9, 2, 4);
+       double distnce = x.distance3d(z);
+       System.out.println(distnce);
 
-    @Test
-    public void when74to195thenDistance11() {
-        int x1 = 7;
-        int y1 = 4;
-        int x2 = 19;
-        int y2 = 5;
-        int expected = 11;
-        double out = Point.distance(x1, y1, x2, y2);
-        Assert.assertEquals(expected, out, 0.96);
-    }
-
-    @Test
-    public void when12to34thenDistance3() {
-        int x1 = 1;
-        int y1 = 2;
-        int x2 = 9;
-        int y2 = 4;
-        int expected = 7;
-        double out = Point.distance(x1, y1, x2, y2);
-        Assert.assertEquals(expected, out, 0.8);
     }
 }
+
